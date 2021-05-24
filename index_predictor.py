@@ -10,7 +10,7 @@ from plotly import graph_objs as go
 START = "2015-01-01"
 TODAY = date.today().strftime("%Y-%m-%d")
 
-st.title("Stock Prediction App")
+st.title("Index Prediction with FB Prophet")
 
 stocks = ("SPY","IWM","ACWI","IWD","IWF")
 selected_stocks = st.selectbox("Select dataset for prediction", stocks)
@@ -61,4 +61,5 @@ fig2 = m.plot_components(forecast)
 st.write()
 
 # to get clean requirements.txt in new version of pip 
-# pip list --format=freeze > requirements.txt
+# pip3 list --format=freeze > requirements.txt
+
